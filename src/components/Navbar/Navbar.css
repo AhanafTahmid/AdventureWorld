@@ -1,20 +1,18 @@
 .navbar {
   background-color: #333;
   color: white;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
+  padding: 10px 20px;
+  position: fixed; /* Make navbar fixed at the top */
   top: 0;
-  z-index: 1000;
-  
+  left: 0;
+  width: 100%; /* Ensure it spans the full width */
+  z-index: 1000; /* Place above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-container {
-  
-  margin: 0 auto;
-  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the navbar content */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,34 +41,6 @@
   color: #ff9800;
 }
 
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #444;
-  padding: 10px 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content a {
-  color: white;
-  padding: 10px 20px;
-  display: block;
-  text-decoration: none;
-}
-
-.dropdown-content a:hover {
-  background-color: #555;
-}
-
 .search-bar {
   display: flex;
   align-items: center;
@@ -79,13 +49,36 @@
 
 .search-bar input {
   padding: 5px;
-  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
 }
 
 .search-bar button {
-  padding: 5px 10px;
   background-color: #ff9800;
-  color: white;
   border: none;
+  color: white;
+  padding: 5px 10px;
   cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #e68a00;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column; /* Stack links vertically on small screens */
+    gap: 10px;
+  }
+
+  .navbar-container {
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  }
+
+  .search-bar {
+    margin-top: 10px; /* Push search bar below links */
+  }
 }

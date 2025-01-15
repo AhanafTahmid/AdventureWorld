@@ -1,44 +1,61 @@
 .home {
-    text-align: center;
-    padding: 50px;
-  }
-  
-  .hero {
-    margin-bottom: 40px;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .hero button {
-    padding: 10px 20px;
-    background-color: #ff9800;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  
-  .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  
+  text-align: center;
+  padding: 20px;
+}
+
+.hero {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: black;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.hero button {
+  background-color: #ff9800;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.hero button:hover {
+  background-color: #e68a00;
+}
+
+.feature-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  color: black;
+}
+
+.feature {
+  flex: 1 1 calc(33.333% - 20px); /* 3 columns layout */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
   .feature {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    text-align: center;
-    color: black;
+    flex: 1 1 100%; /* Full width on small screens */
   }
+}
 
   

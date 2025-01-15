@@ -19,23 +19,28 @@
 } */
 
 body {
+  /* background-color: white; */
   margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
 }
 
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+main {
+  padding-top: 60px; /* Prevent content from overlapping the navbar */
 }
 
-.main-content {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+section {
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Center content */
 }
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 10px;
+  }
+}
+
 
 
 @keyframes logo-spin {
