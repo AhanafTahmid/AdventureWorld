@@ -11,13 +11,16 @@ function Navbar() {
           <li>
             <NavLink to="/" activeClassName="active" exact>Home</NavLink>
           </li>
-          <li className="dropdown">
+          {/* <li className="dropdown">
             <span className="dropbtn">Destinations</span>
             <div className="dropdown-content">
               <NavLink to="/destinations/mountains">Mountains</NavLink>
               <NavLink to="/destinations/beaches">Beaches</NavLink>
               <NavLink to="/destinations/cities">Cities</NavLink>
             </div>
+          </li> */}
+           <li>
+            <NavLink to="/destinations" activeClassName="active">Destinations</NavLink>
           </li>
           <li>
             <NavLink to="/tours" activeClassName="active">Tours</NavLink>

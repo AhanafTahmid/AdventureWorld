@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import Slider from '../Slider/Slider';
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
         <p>Discover breathtaking destinations and unforgettable experiences.</p>
         <button>Start Exploring</button>
       </div>
+      <Slider></Slider>
       <div className="feature-grid">
         <div className="feature">
           <h2>Top Destinations</h2>
