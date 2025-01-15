@@ -26,13 +26,13 @@ body {
 }
 
 main {
-  padding-top: 60px; /* Prevent content from overlapping the navbar */
+  padding-top: 60px;
 }
 
 section {
   padding: 20px;
   max-width: 1200px;
-  margin: 0 auto; /* Center content */
+  margin: 0 auto; 
 }
 
 @media screen and (max-width: 768px) {

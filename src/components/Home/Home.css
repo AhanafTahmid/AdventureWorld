@@ -39,12 +39,12 @@
 .feature-grid {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap; /* Allow wrapping on small screens */
+  flex-wrap: wrap; 
   color: black;
 }
 
 .feature {
-  flex: 1 1 calc(33.333% - 20px); /* 3 columns layout */
+  flex: 1 1 calc(33.333% - 20px); 
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
@@ -54,7 +54,7 @@
 
 @media screen and (max-width: 768px) {
   .feature {
-    flex: 1 1 100%; /* Full width on small screens */
+    flex: 1 1 100%; 
   }
 }
 

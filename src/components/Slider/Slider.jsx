@@ -3,9 +3,9 @@ import "./Slider.css";
 
 const Slider = () => {
   const slides = [
-    { image: "https://media.istockphoto.com/id/1189969126/photo/group-of-hikers-walks-in-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=YlJOZLmELRF0HaEr1Xv4-Uae_VN4vnB8XnE99hGD3gQ=", title: "Explore Mountains" },
-    { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU3m1hB7Ods0k0SMohA8kibr9rXboQ5nxhXg&s", title: "Relax at Beaches" },
-    { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRtQYk7XotOkopbTirs9_GnQXaPYOxkK_Qxw&s", title: "Discover Cities" },
+    { image: "https://img.freepik.com/premium-photo/explore-stunning-scenery-majestic-mountains-ideal-travel-destinations-creating-unforgettable-memories-concept-travel-destinations-scenic-views-memorable-memories_918839-374730.jpg", title: "Explore Mountains" },
+    { image: "https://thumbs.dreamstime.com/b/couple-relax-beach-enjoying-beautiful-sea-tropical-island-enjoy-summer-vacation-concept-150711582.jpg", title: "Relax at Beaches" },
+    { image: "https://images.adsttc.com/media/images/6242/cde5/3e4b/3145/de00/0015/newsletter/shutterstock_406828165.jpg?1648545235", title: "Discover Cities" },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
