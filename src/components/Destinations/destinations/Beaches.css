@@ -1,0 +1,15 @@
+.destinations {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  .destinations h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .destinations p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
