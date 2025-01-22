@@ -9,6 +9,7 @@ import Cities from './components/Destinations/destinations/Cities';
 import Tours from './components/Tours/Tours';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import Places from './components/Places/places';
 import './App.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path="/destinations/cities" element={<Cities />} />
             <Route path="/tours" element={<Tours />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/places" element={<Places />} />
           </Routes>
         </main>
         <Footer />

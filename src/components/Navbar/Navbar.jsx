@@ -28,6 +28,10 @@ function Navbar() {
           <li>
             <NavLink to="/contact" activeClassName="active">Contact</NavLink>
           </li>
+
+          <li>
+            <NavLink to="/places" activeClassName="active">Find Places</NavLink>
+          </li>
         </ul>
         <div className="search-bar">
           <input type="text" placeholder="Search..." />
